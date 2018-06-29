@@ -73,8 +73,15 @@
             z-index: 1;
         }
         select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
             appearance: none;
             border: none;
+            padding: 9px 38px 8px 36px;
+            min-height: 47px;
+            &::-ms-expand {
+                display: none;
+            }
         }
     }
     .top-content-posts {
