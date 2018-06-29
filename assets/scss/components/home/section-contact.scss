@@ -1,0 +1,43 @@
+.section-contact {
+    color: $light;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-image: url(../../img/bg-contact.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 100px 0;
+    @include respond-to($md) {
+        padding: 125px 0;
+    }
+    @include respond-to($lg) {
+        padding: 136px 0 163px;
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(100, 114, 183, .9);
+        z-index: 1;
+    }
+    .container {
+        position: relative;
+        text-align: center;
+        z-index: 2;
+    }
+    .title-section {
+        margin-bottom: 30px;
+        @include respond-to($sm){
+            margin-bottom: 0;
+        }
+    }
+    .sub-title-section {
+        margin-bottom: 35px;
+    }
+}
+

@@ -1,0 +1,114 @@
+.slider {
+    position: relative;
+    .slide-item {
+        display: table;
+        position: relative;
+        width: 100%;
+        background-image: url(../../img/bg-bussines.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: $grey-900;
+        -webkit-background-size: cover;
+        background-size: cover;
+        min-height: 558px;
+        padding: 20px 0;
+        @include respond-to($md) {
+            min-height: 640px;
+            padding: 50px 0;
+        }
+        @include respond-to($lg) {
+            min-height: 770px;
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            background: rgba(66, 63, 84, .4);
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            z-index: 1;
+        }
+        .inner {
+            width: 100%;
+            display: table-cell;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color: $white;
+            z-index: 2;
+        }
+        .title-slide {
+            width: 100%;
+            max-width: 836px;
+            margin: 0 auto 13px;
+        }
+        .text-slide {
+            width: 100%;
+            max-width: 544px;
+            margin: 0 auto 31px;
+        }
+        .link-slide {
+            position: relative;
+            display: block;
+            color: inherit;
+            text-transform: uppercase;
+            transition: .6s;
+            &:hover,
+            &:focus {
+                color: $warm;
+                outline: none;
+                .fa {
+                    transform: translateX(10px);
+                }
+            }
+            .fa {
+                margin-left: 19px;
+                font-size: 22px;
+                transition: transform .35s;
+                position: relative;
+            }
+        }
+    }
+
+    .pagination {
+        display: none;
+        @include respond-to($sm) {
+            position: absolute;
+            display: block;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            .dots {
+
+            }
+            .dot {
+                display: inline-block;
+                vertical-align: middle;
+                span {
+                    display: block;
+                    background: $light;
+                    opacity: 0.7;
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                    margin: 0 6px;
+                    transition: .32s;
+                    &:hover,
+                    &:focus {
+                        background: $warm;
+                        width: 12px;
+                        height: 12px;
+                        margin: 0 4px;
+                    }
+                }
+            }
+        }
+    }
+
+}

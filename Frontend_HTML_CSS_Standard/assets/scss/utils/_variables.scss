@@ -1,0 +1,60 @@
+/*
+* Grid
+*/
+
+$container-max-widths: (
+        xxl: 1666px
+);
+
+.container-fluid {
+    max-width: 1666px;
+}
+
+$grid-gutter-width: 46px;
+
+/*
+* Breakpoints
+*/
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1300px,
+        xxl: 1666px,
+);
+
+$xs: '(max-width: 0px)';
+$sm: '(min-width: 576px)';
+$md: '(min-width: 768px)';
+$lg: '(min-width: 992px)';
+$xl: '(min-width: 1300px)';
+$xxl: '(min-width: 1900px)';
+
+/*
+* fonts
+*/
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Roboto Slab', serif;
+$helper-font: 'American Typewriter';
+
+/*
+* colors
+*/
+$primary: #f4f7fd;
+$light: #edf1f2;
+$blue: #6472b7;
+$blue-100: #c1e1f4;
+$secondary: #9a98a0;
+$white: #ffffff;
+$grey: #555365;
+$grey-300: #bdbdc2;
+$grey-400: #9a98a0;
+$grey-500: #767481;
+$grey-600: #807f89;
+$grey-800: #555265;
+$grey-900: #423f54;
+$black: #000000;
+$warm: #efae7c;
+

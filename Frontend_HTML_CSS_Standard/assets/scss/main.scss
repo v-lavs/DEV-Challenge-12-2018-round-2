@@ -1,0 +1,19 @@
+@import 'utils/variables';
+@import 'utils/mixins';
+
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/base';
+
+@import 'components/nav';
+@import 'components/slider';
+@import 'components/btn';
+@import 'components/card-post';
+@import 'components/small-posts-list';
+
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/home';
+

@@ -1,0 +1,35 @@
+.wrap {
+    padding-top: 5px;
+    overflow: hidden;
+    @include respond-to($sm) {
+        padding-top: 17px;
+    }
+    @include respond-to($lg){
+        padding-top: 20px;
+    }
+    @include respond-to($xl){
+        padding-top: 90px;
+    }
+}
+
+body {
+    background-color: $primary;
+    font-family: $primary-font;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
